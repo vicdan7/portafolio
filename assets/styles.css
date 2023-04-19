@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/img/sebastian-bednarek-x2Z0uNj-Quo-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#home .content header{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+#home .content header .content-header{
+    max-width: 1100px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#home .content header .content-header h1{
+    text-align: center;
+    color:  #ee2b5f;
+}
+#home .content header .content-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#home .content header .content-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+#home .content header .content-header nav ul a:hover{
+    color:  #ee2b5f;
+}
+#home .content header .content-header .social-media a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+#home .content header .content-header .social-media a:hover{
+    color: #cc5877;
+}
+#home .content .presentation{
+    max-width: 1100px ;
+    height: 100vh;
+    margin: auto;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#home .content .presentation .welcome-style{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#home .content .presentation h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#home .content .presentation h2 span{
+    font-size: 35px;
+    color:  #ee2b5f;
+}
+#home .content .presentation .description-style{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+#home .content .presentation a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#home .content .presentation a:hover{
+    background-color: #ce1647;
+}
+#icon-nav{
+    color: #fff;
+    display: none;
+}
+#aboutme{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+#aboutme .content-pic{
+    max-width: 400px;
+    margin-right: 80px;
+}
+#aboutme .content-pic img{
+    padding: 20px;
+    width: 400%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+#aboutme .aboutme-style{
+    margin: 0 40px;
+}
+#aboutme .aboutme-style .section-title{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+    margin-left: 8em;
+}
+#aboutme .aboutme-style h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    margin-left: 5.2em;
+}
+#aboutme .aboutme-style h2 span{
+    color: #da2b5a;
+}
+#aboutme .aboutme-style h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    margin-left: 10em;
+}
+#aboutme .aboutme-style p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+    margin-left: 13em;
+}
+#aboutme .aboutme-style a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+    margin-left: 10.9em;
+}
+#aboutme .aboutme-style a:hover{
+    background-color: #da2b5a;
+    color: #fff;
+    border: 2px solid lightcoral;
+}
+#services{
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+#services .title-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#services .file{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+#services .file .service{
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+#services .file .service:hover{
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+#services .file .service h4{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+#services .file .service .icon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
