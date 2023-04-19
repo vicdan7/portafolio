@@ -200,7 +200,7 @@ html{
 }
 #services .file .service{
     max-width: 350px;
-    background-color: #fff;
+    background-color: #cf506a;
     padding: 30px;
     margin: 0 5px;
     border-radius: 5px;
@@ -221,4 +221,20 @@ html{
     background-color: #d3d3d3;
     padding: 20px;
     margin-bottom: 25px;
+}
+#services .file .service hr{
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+#services .file .service ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#services .file .service p{
+    font-size: 14px;
+    line-height: 22px;
 }
