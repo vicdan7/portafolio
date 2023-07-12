@@ -125,6 +125,7 @@ img{
 }
 #aboutme .content-pic img{
     padding: 20px;
+    margin-right: -35em;
     width: 300%;
     border-radius: 20px;
     background-color: #f3f3f3;
@@ -140,13 +141,14 @@ img{
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
     margin-left: 8em;
+    margin-top: -2em;
 }
 #aboutme .aboutme-style h2{
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
-    margin-left: 10em;
+    margin-left: 9em;
 }
 #aboutme .aboutme-style h2 span{
     color: #da2b5a;
@@ -175,7 +177,7 @@ img{
     border: 1px solid #000;
     margin-top: 30px;
     transition: .5s;
-    margin-left: 18.5em;
+    margin-left: 14.5em;
 }
 #aboutme .aboutme-style a:hover{
     background-color: #da2b5a;
@@ -527,6 +529,39 @@ footer a{
     }
     #aboutme{
         padding: 50px 0;
+        display: block;
+    }
+    #aboutme .content-pic{
+        margin: auto;
+        max-width: 200px;
+    }
+    #aboutme .content-pic img{
+        padding: 8px;
+    }
+    #aboutme .aboutme-style .section-title{
+        text-align: center;
+    }
+    #aboutme .aboutme-style h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #services{
+        padding: 50px 15px;
+    }
+    #services .file{
+        display: block;
+    }
+    services .file .service{
+        margin: 10px auto;
+    }
+    .content-skills{
+        padding: 50px 20px;
+    }
+    #portfolio{
+        padding: 50px 0;
+    }
+    #portfolio .file{
         display: block;
     }
 }
