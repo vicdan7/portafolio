@@ -5,15 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
+  
 }
 html{
     scroll-behavior: smooth;
 }
 img{
-    width: 100%;
+   max-width: 100%;
 }
 #home{
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/img/sebastian-bednarek-x2Z0uNj-Quo-unsplash.jpg");
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/img/fondo.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -61,6 +62,9 @@ img{
 }
 #home .content header .content-header .social-media a:hover{
     color: #cc5877;
+}
+#home .content header .content-header .selector{
+    color: #ff5080;
 }
 #home .content .presentation{
     max-width: 1100px ;
@@ -114,7 +118,7 @@ img{
 }
 #aboutme{
     max-width: 1100px;
-    margin: auto;
+  
     padding: 100px 15px;
     color: #111135;
     display: flex;
@@ -122,16 +126,20 @@ img{
 #aboutme .content-pic{
     max-width: 400px;
     margin-right: 80px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 #aboutme .content-pic img{
     padding: 20px;
-    margin-right: -35em;
+
     width: 300%;
     border-radius: 20px;
     background-color: #f3f3f3;
 }
 #aboutme .aboutme-style{
-    margin: 0 40px;
+ 
+    flex-grow: 2;
+    flex-basis: 0;
 }
 #aboutme .aboutme-style .section-title{
     font-size: 22px;
@@ -185,6 +193,7 @@ img{
     border: 2px solid lightcoral;
 }
 #services{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/img/fondo3.jpg");
     padding: 100px 15px;
     text-align: center;
     background-color:  #cec5c5;
@@ -192,7 +201,7 @@ img{
 #services .title-seccion{
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #7c7c99;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -202,6 +211,7 @@ img{
     justify-content: space-between;
     max-width: 1100px;
     margin: 30px auto;
+    opacity: 50%;
 }
 #services .file .service{
     max-width: 350px;
@@ -244,7 +254,7 @@ img{
     line-height: 22px;
 }
 .content-skills{
-    background: linear-gradient(#eb5a5acc, rgba(33,16,16,.8)), url(/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash\ \(2\).jpg);
+    background: linear-gradient(#eb5a5acc, rgba(33,16,16,.8)), url(/img/fondo2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,6 +265,11 @@ img{
 .content-skills .skill{
     max-width: 600px;
     margin: 30px auto;
+}
+.content-skills h3{
+    color: #00000f;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
 }
 .content-skills .skill .info{
     display: flex;
@@ -453,6 +468,8 @@ img{
 }
 #contact .content-form .file{
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 #contact .content-form .mitad{
     display: flex;
@@ -528,22 +545,31 @@ footer a{
         font-size: 40px;
     }
     #aboutme{
-        padding: 50px 0;
         display: block;
     }
     #aboutme .content-pic{
         margin: auto;
-        max-width: 200px;
+
     }
     #aboutme .content-pic img{
         padding: 8px;
     }
     #aboutme .aboutme-style .section-title{
         text-align: center;
+        margin-left: 0;
+        margin-top: 0;
     }
     #aboutme .aboutme-style h2{
-        font-size: 25px;
-        text-align: center;
+      margin: 10px 0;
+    }
+    #aboutme .aboutme-style h3{
+        margin: 20px 0;
+    }
+    #aboutme .aboutme-style p{
+        margin-left: 0;
+    }
+    #aboutme .aboutme-style a{
+        margin-left: 0;
     }
 
     #services{
@@ -552,7 +578,7 @@ footer a{
     #services .file{
         display: block;
     }
-    services .file .service{
+    #services .file .service{
         margin: 10px auto;
     }
     .content-skills{
@@ -564,6 +590,21 @@ footer a{
     #portfolio .file{
         display: block;
     }
+    #portfolio .file .project{
+        margin: 10px auto;
+    }
+    #contact{
+        padding: 50px 15px;
+    }
+    #contact .content-form .file mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contact .content-form .file mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+ 
 }
 
 
