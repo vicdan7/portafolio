@@ -451,6 +451,7 @@ img{
 }
 #contact{
     padding: 100px 15px;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/img/fondo4.jpg");
 }
 #contact .title-section{
     margin-bottom: 20px;
