@@ -118,28 +118,27 @@ img{
 }
 #aboutme{
     max-width: 1100px;
-  
+    
     padding: 100px 15px;
     color: #111135;
     display: flex;
 }
 #aboutme .content-pic{
     max-width: 400px;
-    margin-right: 80px;
     flex-grow: 1;
     flex-basis: 0;
 }
 #aboutme .content-pic img{
     padding: 20px;
-
+    margin: 5rem;
     width: 300%;
     border-radius: 20px;
     background-color: #f3f3f3;
 }
 #aboutme .aboutme-style{
- 
     flex-grow: 2;
     flex-basis: 0;
+    text-align: justify;
 }
 #aboutme .aboutme-style .section-title{
     font-size: 22px;
@@ -148,15 +147,16 @@ img{
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
-    margin-left: 8em;
+    margin-left: 10em;
     margin-top: -2em;
 }
 #aboutme .aboutme-style h2{
     font-size: 34px;
     font-weight: bold;
-    margin: 20px 0;
+    margin-right: 1em;
     letter-spacing: 2px;
     margin-left: 9em;
+    text-align: center;
 }
 #aboutme .aboutme-style h2 span{
     color: #da2b5a;
@@ -167,7 +167,9 @@ img{
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    margin-left: 18em;
+    text-align: center;
+    margin-left: 12em;
+    padding-bottom: 1.5em;
 }
 #aboutme .aboutme-style p{
     font-size: 14px;
@@ -415,9 +417,10 @@ img{
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    padding: 0 8rem;
 }
 #portfolio .file2 .project{
-    max-width: 340px;
+    
     border: 1px solid #000;
     border-radius: 2em;
     margin: 0 20px;
@@ -516,11 +519,11 @@ footer a{
     font-size: 26px;
 }
 
-@media screen and (max-width:800px){
-    .social-media{
+@media screen and (max-width:700px){
+    nav{
         display: none;
     }
-    nav{
+    .social-media{
         display: none;
     }
     nav.responsive{
@@ -554,6 +557,7 @@ footer a{
     }
     #aboutme .content-pic img{
         padding: 8px;
+        margin: 0;
     }
     #aboutme .aboutme-style .section-title{
         text-align: center;
@@ -590,8 +594,16 @@ footer a{
     }
     #portfolio .file{
         display: block;
+        padding: 0 30px;
+    }
+    #portfolio .file2{
+        display: block;
+        padding: 0 30px;
     }
     #portfolio .file .project{
+        margin: 10px auto;
+    }
+    #portfolio .file2 .project{
         margin: 10px auto;
     }
     #contact{
@@ -601,7 +613,15 @@ footer a{
         margin-bottom: 15px;
         display: block;
     }
+    #contact .content-form .file2 mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
     #contact .content-form .file mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #contact .content-form .file2 mitad input{
         width: 100%;
         margin-bottom: 15px;
     }
